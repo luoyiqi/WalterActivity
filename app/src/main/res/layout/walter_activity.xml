@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffff0f"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/u_biz_model_yinhao"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="35dp"
+        android:src="@mipmap/u_biz_edit_draft_close" />
+
+    <ImageView
+        android:id="@+id/u_biz_model_avater"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/u_biz_model_yinhao"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/u_biz_edit_draft_img" />
+
+    <RelativeLayout
+        android:id="@+id/u_biz_avatar_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_biz_model_avater">
+
+        <TextView
+            android:text="大徐啊大徐"
+            android:id="@+id/u_biz_model_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="160dp"
+            android:textColor="#333333"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/u_biz_model_level"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/u_biz_model_uname"/>
+    </RelativeLayout>
+
+    <TextView
+        android:text="浙江 杭州"
+        android:id="@+id/u_biz_model_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_biz_avatar_rl"
+        android:layout_marginLeft="35dp"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/u_biz_model_divider"
+        android:layout_width="12dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/u_biz_model_address"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/u_biz_edit_draft_text" />
+
+    <TextView
+        android:id="@+id/u_biz_model_mid_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/u_biz_model_divider"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/u_biz_tag_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_biz_model_mid_divider">
+
+        <TextView
+            android:text="我是大明从"
+            android:id="@+id/u_biz_model_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36dp"
+            android:padding="12dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/u_biz_model_edit_tags"
+            android:layout_width="45dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/u_biz_model_id_tv"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="80cm 65cm 84cm"
+        android:id="@+id/u_biz_model_wh_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_biz_tag_rl"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="45kg 170cm"
+        android:id="@+id/u_biz_model_bwh_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_biz_model_wh_tv"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/u_biz_model_contact_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/u_biz_model_bwh_tv"
+        android:layout_marginTop="18dp">
+
+        <ImageView
+            android:id="@+id/u_biz_model_contact_iv"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36dp"
+            />
+
+        <TextView
+            android:text="18670088340"
+            android:id="@+id/u_biz_model_contact_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/u_biz_model_contact_iv"
+            android:ellipsize="end"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:maxWidth="200dp"
+            android:textColor="#d9d9d9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/u_biz_model_edit_contact"
+            android:layout_width="45dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/u_biz_model_contact_tv"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
